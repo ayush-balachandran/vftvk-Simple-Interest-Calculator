@@ -16,7 +16,7 @@ function compute()
         var intrest = (principal * rate * years)/100;
         var final = parseInt(principal) + parseInt(intrest);
         var year = parseInt(new Date().getFullYear())+parseInt(years);
-        document.getElementById("result").innerHTML= "If you deposit "+principal+",\<br\> at an interest rate of "+rate+"%\<br\>You will receive an amount of "+final+",\<br\>in the year "+year;
+        document.getElementById("result").innerHTML= "If you deposit "+principal+",\<br\> at an interest rate of "+rate+"%\<br\>You will receive an interest amount of "+intrest+",\<br\>Total amount received will be "+principal+"\<br\>in the year "+year;
     }
     else
     {
