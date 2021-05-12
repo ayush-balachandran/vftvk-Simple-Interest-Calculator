@@ -16,11 +16,11 @@ function compute()
         var intrest = (principal * rate * years)/100;
         var final = parseInt(principal) + parseInt(intrest);
         var year = parseInt(new Date().getFullYear())+parseInt(years);
-        document.getElementById("result").innerHTML= "If you deposit "+principal+",\<br\> at an interest rate of "+rate+"%,\<br\>You will receive an interest amount of "+intrest+",\<br\>Total amount received will be "+final+",\<br\>in the year "+year;
+        document.getElementById("result").innerHTML= "If you deposit \<mark\>"+principal+"\</mark\>,\<br\> at an interest rate of \<mark\>"+rate+"%\</mark\>,\<br\>You will receive an interest amount of \<mark\>"+intrest+"\</mark\>,\<br\>Total amount received will be \<mark\>"+final+"\</mark\>,\<br\>in the year \<mark\>"+year+"\</mark\>.";
     }
     else
     {
-        document.getElementById("result").innerHTML= "Enter a positive number";
+        window.alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
 }
